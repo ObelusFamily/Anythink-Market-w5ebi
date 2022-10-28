@@ -11,3 +11,21 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 ## First setup
 
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+
+## Steps to run this repository locally:
+
+1. Clone the repository locally using command
+
+```
+git clone https://github.com/ObelusFamily/Anythink-Market-w5ebi.git
+```
+
+2. Install [Docker](https://docs.docker.com/get-docker/)
+
+   1. You can verify if docker is installed or not by running following commands in your terminal `docker -v` and `docker-compose -v`
+
+3. Run `docker-compose up` from project root directory
+
+4. If docker is running correctly, the backend should be running and able to connect to local database. Test this by going to [http://localhost:3000/api/ping](https://docs.docker.com/get-docker/)
+
+5. Now check if frontend is working and connected to backend by creating a new user at [http://localhost:3001/register](http://localhost:3001/register)
